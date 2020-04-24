@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "c5a4cc64-a7b7-4036-a965-d44ec298aa7f",
+            "Value": {
+                "id": "836fef1f-91f3-4672-ba24-20242d83f874",
+                "resourcePath": "sounds\\snd_main_theme\\snd_main_theme.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "c5a63d15-6fb8-4709-8755-c388e72dc988",
             "Value": {
                 "id": "7de857de-0a77-4467-b140-100ff3440ccc",
@@ -492,14 +500,6 @@
                 "id": "0d411e1f-06d0-4c8b-97e5-e01b6bc2d5b6",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
-            }
-        },
-        {
-            "Key": "f5f5025c-e039-49f9-8423-d44cd571811c",
-            "Value": {
-                "id": "d03228d8-d3d6-4f8f-b923-1a2afbbac594",
-                "resourcePath": "objects\\obj_card_test\\obj_card_test.yy",
-                "resourceType": "GMObject"
             }
         },
         {

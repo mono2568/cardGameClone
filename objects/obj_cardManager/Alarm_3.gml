@@ -4,8 +4,7 @@ for(var i = 0; i < global.maxCardsInDeck; i ++){
 	if(card.open == true){
 		card.faceUp = true;
 		audio_play_sound(snd_glass_break,99,false);
-		//card.inHands = true;
-		//card.yPosHands = card.destY;
+		//create explosion effect when open card
 		instance_create_layer(card.x,card.y,"Instances",obj_card_explode);
 	}
 }

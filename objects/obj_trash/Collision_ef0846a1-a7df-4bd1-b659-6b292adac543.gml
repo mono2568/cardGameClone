@@ -6,10 +6,9 @@ with(other){
 	image_xscale = 1;
 	image_yscale = 1;
 	if(trashSound == false){
-		show_debug_message("trashSound");
 		audio_play_sound(snd_trash,99,false);
 		trashSound = true;
 		obj_trash.startMove = true;
-		obj_trash.debugCount = 0;
+		obj_trash.collisionCount = 0;
 	}
 }

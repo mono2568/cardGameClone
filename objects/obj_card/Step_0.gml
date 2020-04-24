@@ -1,4 +1,4 @@
-//change the sprite of the card
+//make the cards bounce when the cards are in player's hand
 if(timeW < durationW and inHands == true and moveBounce == true and discarded == false){
 	x = ease_in_out_quint(timeW,startXW,destXW-startXW,durationW);
 	y = ease_in_out_quint(timeW,startYW,destYW-startYW,durationW);
@@ -27,7 +27,7 @@ if(timeW < durationW and inHands == true and moveBounce == true and discarded ==
 	timeW = 0;
 }
 
-
+//change sprite
 if(faceUp)
 {
 	if(type == global.rock){
@@ -44,6 +44,7 @@ if(faceUp)
 //move the card by using the ease function
 if(time < duration and startMove == true){
 	if(faceUp == false){
+		// create shadow when the cards are moving face down
 		instance_create_layer(x,y,"Instances",obj_card_shadow);
 	}
 	x = ease_out_quad(time,startX,destX-startX,duration);
@@ -59,7 +60,7 @@ if(time < duration and startMove == true){
 
 
 
-//fluctuate
+//rotate the card when the player hovers their mouse on the card
 if(timeF < durationF and moveBounce == false){
 	
 	image_angle = ease_out_quad(timeF,startAngleF,destAngleF-startAngleF,durationF);
@@ -77,16 +78,12 @@ if(timeF < durationF and moveBounce == false){
 //select the card to use
 if(inHands == true and goToSetPosition == false and global.isPicking == true and discarded == false){
 	if(mouse_x+10 > x and mouse_x < x + sprite_width-20-70 and mouse_y > y-10 and mouse_y < y + sprite_height-10){
-			show_debug_message(mouse_x);
 			if(moveBounce == true){
 				startAngleF = image_angle;
 				destAngleF = image_angle + 360;
 				audio_play_sound(snd_start_rotate,99,false);
 			}
 			moveBounce = false;
-			
-			//move the cards slightly up when the mouse is on the card
-			//y = yPosHands-10;
 			
 			//move the card when the card is selected
 			if(mouse_check_button_pressed(mb_left)and startMove == false){
@@ -109,6 +106,5 @@ if(inHands == true and goToSetPosition == false and global.isPicking == true and
 	}else{
 			image_angle = 0;
 			moveBounce = true;
-			//y = yPosHands;
 	}	
 }

@@ -10,6 +10,7 @@ for(var i = 0; i < global.maxCardsInDeck; i ++){
 		card.faceUp = true;
 		card.inHands = true;
 		card.yPosHands = card.destY;
+		//create explosion effect when open card
 		instance_create_layer(card.x,card.y,"Instances",obj_card_explode);
 		card.open = false;
 	}

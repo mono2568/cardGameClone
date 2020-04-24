@@ -10,3 +10,5 @@ global.scoreP = 0;
 global.scoreC = 0;
 //check if the player is picking card
 global.isPicking = true;
+// play main theme
+audio_play_sound(snd_main_theme,99,true);

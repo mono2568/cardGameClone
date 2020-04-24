@@ -34,9 +34,7 @@ destScaleXW = image_xscale*1.5;
 destScaleYW = image_yscale*0.5;
 startAngleW = image_angle;
 destAngleW = image_angle+0;
-
 moveBounce = true;
-haveShadow = true;
 trashSound = false;
 //variable for ease function when click
 startXF = x;

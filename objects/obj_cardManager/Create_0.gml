@@ -21,10 +21,11 @@ global.alarm4Loop = false;
 global.countDiscard = 0;
 global.gameEnd = false;
 global.startDiscard = false;
-
+//discard card x position
 discardPosX = 900;
+
+//assign card type
 for(var counter = 0; counter < global.maxCardsInDeck; counter++){
-	//show_debug_message("create card");
 	var newCard = instance_create_layer(x,y,"Instances",obj_card);
 	//define what type of card it should be
 	newCard.type = floor(3*counter/global.maxCardsInDeck);
