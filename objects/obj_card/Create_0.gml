@@ -37,10 +37,7 @@ destAngleW = image_angle+0;
 moveBounce = true;
 trashSound = false;
 //variable for ease function when click
-startXF = x;
 destXF = x;
-startYF = y;
-destYF = y+150;
 startAngleF = image_angle;
 destAngleF = image_angle+360;
 durationF = 60;

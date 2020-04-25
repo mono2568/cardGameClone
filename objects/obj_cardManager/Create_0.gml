@@ -26,7 +26,7 @@ discardPosX = 900;
 
 //assign card type
 for(var counter = 0; counter < global.maxCardsInDeck; counter++){
-	var newCard = instance_create_layer(x,y,"Instances",obj_card);
+	var newCard = instance_create_layer(x,y,"Instances_1",obj_card);
 	//define what type of card it should be
 	newCard.type = floor(3*counter/global.maxCardsInDeck);
 	//lay the deck of card
@@ -40,7 +40,7 @@ ds_list_shuffle(deck);
 //organize the card
 for(var counter = 0; counter < global.maxCardsInDeck; counter++){
 	var newCard = ds_list_find_value(deck,counter);
-	newCard.depth = counter+50;
+	newCard.depth = counter+60;
 	newCard.y = global.startY + counter*2;
 	newCard.debugNum = counter;
 
