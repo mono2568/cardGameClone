@@ -1,3 +1,4 @@
+//move obj_hand
 if(handStart == true and y >= 50){
 	y -= 16;	
 }else if(handStart == false and y < 800){
